@@ -1,0 +1,71 @@
+Proyecto LeerBebes
+===========================================
+Clave SSH:
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDByHW0u5IVnXWEzWPJd1Sx/vlqBcIjEFl4ENAWPt1C/+a/n4aKLHh94SpyQ17njRjpkyJqVk5riTX39MHroR/PhkWtlNutL+CEkE9yeyP7fbk0C3EFeARKiGpWUdN/HwTmNRJqFUZtt3TBDiBE0o3ktAvxF5pwGUceKFfjSQA8v5LYy1yYQyF8T9iwgoC+prof3Ttpkb+TbjNPlSvgQ2QS5s0yAk4kuT+ax3pvAon4KPpHYh9cNpYCM5aW7OwYUnTt/Xa8bjMzH5KFfCUwkobIXGpu8QDcilKT37jPZBMp0qSpfyL1TMW7V3D/b192mxEp4tyq2zGTVRiNg7Ux6dn7 Julio@Julio-PC
+===========================================
+
+Repositorio GitHub:
+http:
+https://github.com/juliosep/LeerBebes.git
+ssh:
+git@github.com:juliosep/LeerBebes.git
+
+Descripción:
+Muestra cada palabra por un tiempo (A) determinado y se reproduce el audio de la palabra, lo debe realizar 5 veces con espacios de tiempo (B) entre palabras.
+Se deben realizar mínimo 3 sesiones al día, cada palabra nueva la debe ver el niño mínimo 15 veces.
+en la siguiente sesión en la recera repitición se debe preguntar al niño que dice ahí.
+Se terminan las 5 repetiones de la misma palabra.
+Si contesta correctmente, en la siguiente sesión se debe hacer un repaso preguntandole al niño las palabras aprendidas anteriormente y comenzar las repeticiones de una palabra nueva.
+Si no contesta correctmente, se debe continuar con la misma palabra otras 3 sesiones y en la siguiente sesión volver a evaluar el aprendizaje de la palabra.
+El niño debe ver solo la palabra que está aprendiendo y las que ya ha aprendido.
+
+La aplicación debe tener 2 modos: Práctica y Evaluación.
+El modo práctica es para que el niño haga las repeticiones por si mismo.
+El modo evaluación lo debe manejar el adulto cada vez que quiera verificar el aprendizaje de una palabra.
+La configuración la debe realizar un adulto, tambien ingresa los usuarios y estudiantes.
+Para la evaluación no se debe reproducir el sonido de la palabra.
+
+
+==================================
+TABLAS
+
+palabras:
+numeroPal
+palabra
+color
+tamaño
+
+
+usuarios:
+nombre
+tipo
+  adulto
+  estudiante
+clave
+
+
+registros:
+estudiante
+numeroPal
+cantRep
+
+
+general:
+cantSes
+cantRep
+minRep
+tiempo_show
+tiempo_pausa
+
+===========================
+CONFIGURACION
+
+seleccionar Modo
+seleccionar estudiante
+cantSes
+cantRep
+minRep
+tiempo_show
+tiempo_pausa
+nuevo usuario
+
